@@ -1,0 +1,11 @@
+{
+  "name": "controle-financeiro",
+  "version": "1.0.0",
+  "description": "Sistema de controle financeiro mensal",
+  "scripts": {
+    "start": "http-server ."
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
