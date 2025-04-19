@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Controle Financeiro Mensal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="pagina-inicial" id="paginaInicial">
+      <h1>Controle Financeiro Mensal</h1>
+      <img src="img/Logo.png" alt="Logo controle financeiro" class="logo" />
+      <div class="botoes-meses">
+        <button onclick="abrirMes('Janeiro')">Janeiro</button>
+        <button onclick="abrirMes('Fevereiro')">Fevereiro</button>
+        <button onclick="abrirMes('Março')">Março</button>
+        <button onclick="abrirMes('Abril')">Abril</button>
+        <button onclick="abrirMes('Maio')">Maio</button>
+        <button onclick="abrirMes('Junho')">Junho</button>
+        <button onclick="abrirMes('Julho')">Julho</button>
+        <button onclick="abrirMes('Agosto')">Agosto</button>
+        <button onclick="abrirMes('Setembro')">Setembro</button>
+        <button onclick="abrirMes('Outubro')">Outubro</button>
+        <button onclick="abrirMes('Novembro')">Novembro</button>
+        <button onclick="abrirMes('Dezembro')">Dezembro</button>
+      </div>
+    </div>
+
+    <div class="pagina-mes" id="paginaMes" style="display: none">
+      <button class="voltar" id="btnVoltar">← Voltar</button>
+
+      <h2 id="tituloMes"></h2>
+
+      <div style="text-align: right; margin-bottom: 10px">
+        <label for="seletorMoeda">Moeda:</label>
+        <select id="seletorMoeda" onchange="trocarMoeda()">
+          <option value="BRL">R$</option>
+          <option value="USD">US$</option>
+          <option value="EUR">€</option>
+          <option value="JPY">¥</option>
+        </select>
+      </div>
+
+      <div class="meme-container">
+        <img id="memeImagem" src="img/Muito-feliz.jpg" alt="Meme do mês" />
+      </div>
+
+      <section class="tabela">
+        <table id="tabelaReceitas">
+          <thead>
+            <tr>
+              <th>Descrição</th>
+              <th>Valor</th>
+              <th>Ação</th>
+            </tr>
+          </thead>
+          <tbody id="receitasBody"></tbody>
+        </table>
+        <button onclick="adicionarLinha('receitasBody')">+ Receita</button>
+      </section>
+
+      <section class="tabela">
+        <table id="tabelaDespesas">
+          <thead>
+            <tr>
+              <th>Descrição</th>
+              <th>Valor</th>
+              <th>Ação</th>
+            </tr>
+          </thead>
+          <tbody id="despesasBody"></tbody>
+        </table>
+        <button onclick="adicionarLinha('despesasBody')">+ Despesa</button>
+      </section>
+
+      <div class="resumo">
+        <p>Total Receitas: <span id="totalReceitas">0.00</span></p>
+        <p>Total Despesas: <span id="totalDespesas">0.00</span></p>
+        <p>Sobra: <span id="sobra">0.00</span></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  background-color: #506f9d7d;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+p {
+  color: #242325db;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+p {
+  font-size: x-large;
+}
+
+#tituloMes {
+  font-size: xx-large;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+#seletorMoeda {
+  font-family: "Montserrat", sans-serif;
+  background-color: #bbb675;
+  color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+th,
+label,
+button,
+textarea {
+  background-color: #bbb675;
+  color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.logo {
+  width: 300px;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.botoes-meses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.botoes-meses button {
+  background-color: #bdb76b;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.tabela {
+  margin: 20px auto;
+  width: 80%;
+  max-width: 700px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.resumo {
+  margin: 20px 0;
+}
+
+.meme-container img {
+  width: 150px;
+  margin: 20px 0;
+}
+
+.voltar {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+#receitasBody input[type="number"] {
+  background-color: #c0efc0;
+  border: 2px solid #2ecc71;
+  border-radius: 6px;
+  padding: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+#despesasBody input[type="number"] {
+  background-color: #f2c4c4;
+  border: 2px solid #e74c3c;
+  border-radius: 6px;
+  padding: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
