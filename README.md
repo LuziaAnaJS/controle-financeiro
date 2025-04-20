@@ -32,6 +32,18 @@ Uma aplicação web simples para organizar receitas, despesas e visualizar o sal
 │ ├── triste.jpg
 │ └── desesperado.png
 
+## 📸 Demonstração
+
+Aqui está uma captura de tela/GIF do meu sistema de controle financeiro em funcionamento:
+
+![Controle Financeiro](./img/Controle-financeiro.gif)
+
+## 🌐 Como acessar
+
+Você pode acessar a aplicação em:
+
+**[🔗 Acessar Aplicação](https://controle-financeiro-ewb7.onrender.com)**
+
 🧑‍💻 Autor
 
 Feito com 💚 por **Luzia Ana J S**
